@@ -42,6 +42,7 @@
   }
   
   a {
+    color: #bf7777e9;
     text-decoration: none;
   }
 </style>
