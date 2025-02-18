@@ -1,5 +1,9 @@
 <script setup>
-  import Transport from '../assets/transportes-1.webp'
+  import { ref } from 'vue'
+import Transport from '../assets/transportes-1.webp'
+import { Transition } from 'vue';
+
+  const algo = ref(true)
 </script>
 
 <template>
@@ -8,7 +12,9 @@
       <h1>Nuestro servicios</h1>
     </header>
 
-    <article>
+    <button @click="algo = !algo">Button</button>
+    <Transition>
+    <article v-show="algo">
         <h3>Transporte de mercancias</h3>
         <div class="info-container">
           <picture>
@@ -17,7 +23,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolor illum commodi ex architecto error iure, quas iste molestiae nulla?</p>
         </div>
     </article>
-
+  </Transition>
     <article>
       <h3>Servicios de logistica</h3>
       <div class="info-container">
@@ -76,5 +82,15 @@
     width: 730px;
     max-height: 400px;
     border-radius: 15px;
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>
