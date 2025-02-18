@@ -4,14 +4,14 @@
 
 <template>
   <footer>
-    <h1>Footer</h1>
+    <span>Derechos reservados</span>
   </footer>
 </template>
 
 <style>
   footer {
-    background-color: bisque;
+    background-color: #211b1bda;
     margin-top: auto;
-    padding-inline: 20px;
+    padding: 25px;
   }
 </style>
