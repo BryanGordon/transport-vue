@@ -11,7 +11,7 @@
 
 <style scoped>
   header {
-    background-color: bisque;
+    background-color: #211b1bda;
     padding-block: 30px;
   }
 
