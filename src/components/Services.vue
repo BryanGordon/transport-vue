@@ -69,7 +69,7 @@ import { Transition } from 'vue';
     display: flex;
     justify-content: space-between;
 
-    & p{
+    & p {
       align-content: center;
       width: 50%;
       padding: 35px;
