@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section>
+  <section id="ubication" v-motion-slide-visible-bottom>
     <header>
       <h1>Ubicacion</h1>
     </header>
