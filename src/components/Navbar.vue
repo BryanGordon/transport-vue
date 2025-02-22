@@ -7,22 +7,22 @@
 
     <ul>
       <li>
-        <a href="#">
+        <a href="/">
           Home
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#services">
           Servicios
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#contactos">
           Contactos
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#ubication">
           Ubicacion
         </a>
       </li>
