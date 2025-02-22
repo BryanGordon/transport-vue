@@ -1,20 +1,15 @@
 <script setup>
-  import { ref } from 'vue'
-import Transport from '../assets/transportes-1.webp'
-import { Transition } from 'vue';
+  import Transport from '../assets/transportes-1.webp'
 
-  const algo = ref(true)
 </script>
 
 <template>
-  <section>
+  <section id="services">
     <header>
       <h1>Nuestro servicios</h1>
     </header>
 
-    <button @click="algo = !algo">Button</button>
-    <Transition>
-    <article v-show="algo">
+    <article >
         <h3>Transporte de mercancias</h3>
         <div class="info-container">
           <picture>
@@ -23,8 +18,8 @@ import { Transition } from 'vue';
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolor illum commodi ex architecto error iure, quas iste molestiae nulla?</p>
         </div>
     </article>
-  </Transition>
-    <article>
+
+    <article v-motion-slide-visible-bottom>
       <h3>Servicios de logistica</h3>
       <div class="info-container">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolor illum commodi ex architecto error iure, quas iste molestiae nulla?</p>
@@ -34,7 +29,7 @@ import { Transition } from 'vue';
         </div>
     </article>
 
-    <article>
+    <article v-motion-slide-visible-bottom>
       <h3>Servicios de logistica</h3>
       <div class="info-container">
           <picture>
