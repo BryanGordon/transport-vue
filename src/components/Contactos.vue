@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <section>
+  <section id="contactos" v-motion-slide-visible-bottom>
     <header>
       <h1>Contactos</h1>
     </header>
